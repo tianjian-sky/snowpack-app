@@ -5,6 +5,8 @@
     "test": "echo \"Vue 3.0 test support is still in progress.\" && exit 1"
   },
   "dependencies": {
+    "node-sass": "^4.14.1",
+    "sass": "^1.26.10",
     "vue": "^3.0.0-0"
   },
   "devDependencies": {

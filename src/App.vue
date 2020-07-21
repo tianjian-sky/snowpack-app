@@ -15,6 +15,9 @@
     </header>
     <p>{{testJson}}</p>
     <img src="./features/test.jpg" @click="sayHello"/>
+    <div class="scssPlay">
+        <h3>SCSS+POSTCSS well support!</h3>
+    </div>
   </div>
 </template>
 
@@ -65,6 +68,16 @@ export default {
   }
   to {
     transform: scale(1.06);
+  }
+}
+</style>
+
+<style lang="scss" scoped>
+.scssPlay {
+  background: #eee;
+  h3 {
+    color:pink;
+    text-shadow: 5px 5px 5px #FF0000;
   }
 }
 </style>
