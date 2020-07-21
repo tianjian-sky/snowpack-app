@@ -13,15 +13,25 @@
         rel="noopener noreferrer"
       >{{ message }}</a>
     </header>
+    <p>{{testJson}}</p>
+    <img src="./features/test.jpg" @click="sayHello"/>
   </div>
 </template>
 
 <script>
+import './features/test.css'
+import json from './features/test.json'
+import otherModule from './features/sayHello'
+
 export default {
   data() {
     return {
-      message: "Learn Vue"
+      message: "Learn Vue",
+      testJson: json
     };
+  },
+  mixins: [otherModule],
+  methods: {
   }
 };
 </script>
